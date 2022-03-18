@@ -1,16 +1,29 @@
-# Project
+# Introduction 
+This project is collaboration with researchers from University of Washington (Kate Stafford, Trevor Branch). The goal of this project is to use audio recordings and correpsonding annotations to build an automatic classifier for calls from 4 different species of blue whales, and to estimate the total number of calls from each population in the audio recordings.
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+# Getting Started
+The code can be run in Python environment. 
+1.	Users need to install corresponding packages in the "requirements.txt" file. 
+2.	The Jupyter notebooks show step-by-step how to build high accuracy classification model with raw audio data and corresponding annotations of detected blue whale calls.
 
-As the maintainer of this project, please make a few updates:
+# Build and Test
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+To run the code, first run:
+```
+pip install -r requirements.txt
+```
 
-## Contributing
+# Users can follow the steps to leverage deep learning techniques to build classifier model:
+- step 1: generate spectrograms based on annotations;
+- step 2: build convolutional neural networks (CNN) which is the baseline model here;
+- step 3: build Siamese network model (SNN) to classify blue whale calls and to estimate the number of calls. This model has higher accuracy compared to CNN. 
+- Note: the full data is not public yet so we only included a small sample of the full data. 
+
+# Publication
+The published paper can be found at https://asa.scitation.org/doi/full/10.1121/10.0004828?journalCode=jas
+
+
+# Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
@@ -24,7 +37,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Trademarks
+# Trademarks
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
 trademarks or logos is subject to and must follow 
